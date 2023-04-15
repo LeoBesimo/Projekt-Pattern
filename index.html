@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="libs/p5.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="selectors">
+    <label for="is-round">Shape:</label>
+    <select name="round selector" id="is-round">
+        <option value="rect">Rectangle</option>
+        <option value="round">Round</option>
+    </select>
+
+    <label for="color-selector">Number of Colors:</label>
+    <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    </div>
+
+    <div class="dateInput">
+        <label>Date for Pattern:</label>
+        <input id="date" type="date" value="2018-07-22">
+    </div>
+
+    <div class="dimensionsInput">
+        <label>Dimensions:</label> 
+        <input id="width" type="number" min="50" max="300" value="100" pattern="/d+" placeholder="width in cm">
+        <input id="height" type="number" min="50" max="300" value="100" pattern="/d+" placeholder="height in cm">
+    </div>
+    
+    <div class="generateImage">
+        <button id="genrerate" onclick="generateImage()">Generate Pattern</button>
+    </div>
+</body>
