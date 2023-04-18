@@ -43,7 +43,8 @@ function generateImage(){
         generateRectangle(canv);
     }
 
-    processImage(colors,percentages);
+    if(nColors > 1)
+        processImage(colors,percentages);
 
     //saveCanvas(date.toLocaleDateString(),'jpg');
 }
